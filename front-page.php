@@ -1,0 +1,21 @@
+<!-- Header -->
+<?php get_header(); ?>
+
+<?php if(has_header_image()): ?>
+    <div class="px-0 py-0 mt-0">
+        <div class="headerImage" style="background-image:url(<?php echo get_header_image(); ?>);">
+        </div>
+    </div>
+<?php endif; ?>
+
+<div class="container">
+      <h2 class="myHeadings"> <?php the_title(); ?></h2>
+      <?php get_template_part('includes/section','content'); ?>
+  <div class="row">
+    <div class="col">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<?php get_footer(); ?>

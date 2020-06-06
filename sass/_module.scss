@@ -1,0 +1,27 @@
+/* WooCommerce */
+
+/* Checkout page layout fix */
+
+.woocommerce-checkout .col-1, .woocommerce-checkout .col-2 {
+    max-width: inherit;
+}
+
+/* Shop price colour  */
+
+.woocommerce ul.products li.product .price{
+  color: #333333 !important;
+}
+
+/* Add to cart button */
+
+.woocommerce a.button{
+  background-color: #333333 !important;
+  color: white !important;
+}
+
+/* Other buttons */
+
+.woocommerce button.button{
+  background-color: #333333 !important;
+  color: white !important;
+}

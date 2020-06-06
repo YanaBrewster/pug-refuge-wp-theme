@@ -1,0 +1,22 @@
+{
+  "name": "charity-shop-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "grunt": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.4.0"
+  }
+}
