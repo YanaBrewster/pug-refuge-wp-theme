@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Lora:wght@700&family=Montserrat:wght@500&display=swap");
+@import url("//use.fontawesome.com/releases/v5.13.0/css/all.css'");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9943,8 +9944,8 @@ p {
 ul, li, a {
   color: #333333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.500em;
-  word-spacing: 8px;
+  font-weight: 500;
+  font-size: 1.05em;
 }
 
 .center-l {
@@ -9984,6 +9985,33 @@ ul, li, a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cart-contents:before {
+  font-family: WooCommerce;
+  content: "\e01d";
+  font-size: 2em;
+  color: white;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 700;
+  padding-right: 5px;
+  vertical-align: bottom;
+}
+
+.cart-contents:hover {
+  text-decoration: none;
+}
+
+.cart-contents-count {
+  color: #ffffff;
+  background-color: #333333;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1px 6px;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=main.css.map */

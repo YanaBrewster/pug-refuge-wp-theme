@@ -10,6 +10,8 @@
   <meta name="author" content="Yana Brewster">
   <meta name="description" content="Yana Brewsters 'Pug Refuge' charity shop Wordpress theme created for a Yoobee Web/UX assignment.">
   <meta name="keywords" content="Wordpress, custom theme, Wellington, New Zealand, website template, UX design, website design">
+  <script src="https://kit.fontawesome.com/8c9236379a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
 </head>
@@ -51,12 +53,31 @@
               ) );
               ?>
 
+<!-- Shopping cart -->
+
+              <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                $count = WC()->cart->cart_contents_count;
+                ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+                if ( $count > 0 ) {
+                    ?>
+                    <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                    <?php
+                }
+                    ?></a>
+
+            <?php } ?>
+
           </nav>
+
+
+
+
 
         </div>
 
       </div>   <!-- end of row -->
 
     </nav>
+
 
   </header>

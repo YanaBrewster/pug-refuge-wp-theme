@@ -7,3 +7,30 @@
     justify-content: center;
     align-items: center;
 }
+
+// Shopping cart icon
+
+.cart-contents:before {
+    font-family:WooCommerce;
+    content: "\e01d";
+    font-size:2em;
+    color: white;
+    margin-top:10px;
+    font-style:normal;
+    font-weight:700;
+    padding-right:5px;
+    vertical-align: bottom;
+}
+.cart-contents:hover {
+    text-decoration: none;
+}
+.cart-contents-count {
+    color: #ffffff;
+    background-color: $grey;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1px 6px;
+    line-height: 1;
+    font-family:'Montserrat', sans-serif;
+    vertical-align: top;
+}

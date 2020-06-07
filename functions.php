@@ -158,6 +158,31 @@ $customHeaderDefaults = array(
 );
 add_theme_support('custom-header', $customHeaderDefaults);
 
+// =============================================================================
+
+// Woocommerce Cart
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css' );
+}
+
+function my_header_add_to_cart_fragment( $fragments ) {
+
+    ob_start();
+    $count = WC()->cart->cart_contents_count;
+    ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+    if ( $count > 0 ) {
+        ?>
+        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+        <?php
+    }
+        ?></a><?php
+
+    $fragments['a.cart-contents'] = ob_get_clean();
+
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
 
 // =============================================================================
 
