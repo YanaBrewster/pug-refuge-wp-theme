@@ -99,6 +99,7 @@ function mytheme_customize_register( $wp_customize ) {
     .myHeadings{
         color: <?php echo get_theme_mod('charityShopTheme_headingTextColour', '#333333'); ?>!important ;
     }
+    
   </style>
 <?php
 }

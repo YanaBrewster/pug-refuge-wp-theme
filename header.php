@@ -17,65 +17,61 @@
 </head>
 <body>
 
-  <header class="myTheme">
+  <header class="myTheme sticky-top pb-2">
 
     <!-- main top navigation -->
-    <nav class="top-nav navbar-expand-lg">
+    <nav class="top-nav">
 
       <div class="row">
 
         <!-- logo -->
-        <div class="col-3 col-lg-12 col-sm-3 com-md-3">
-          <a class="navbar-brand" href="#">
-            <h1 class="siteTitle myTheme d-inline"> <?php echo get_theme_mod('charityShopTheme_siteTitleText'); ?></h1>
+        <div class="col-5 col-xs-5 col-sm-5 col-md-5 col-lg-12">
+          <a class="navbar-brand center-l" href="#">
+            <h1 class="siteTitle myTheme text-center"><i class="fas fa-paw ml-3 mr-3 mt-2"></i><?php echo get_theme_mod('charityShopTheme_siteTitleText'); ?></h1>
           </a>
         </div>
 
         <!-- menu -->
-        <div class="col-9 col-lg-12 col-sm-9 col-md-9">
+        <div class="col-5 col-xs-5 col-sm-5 col-md-5 col-lg-10 float-right">
+          <div class="navbar navbar-expand-lg">
 
-          <nav class="navbar navbar-expand-md center-l">
+            <button class="navbar-toggler navbar-light mt-2 ml-5" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="mr-5 center-l">
+            <?php
+            wp_nav_menu( array(
+              'theme_location'    => 'top-menu',
+              'depth'             => 2,
+              'container'         => 'div',
+              'container_class'   => 'collapse navbar-collapse',
+              'container_id'      => 'bs-example-navbar-collapse-1',
+              'menu_class'        => 'nav navbar-nav',
+              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'            => new WP_Bootstrap_Navwalker(),
+            ) );
+            ?>
+            </span>
+          </div>
+        </div>
 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+        <!-- Shopping cart -->
+        <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 mt-2">
 
-              <?php
-              wp_nav_menu( array(
-                'theme_location'    => 'top-menu',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker(),
-              ) );
+          <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+            $count = WC()->cart->cart_contents_count;
+            ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+            if ( $count > 0 ) {
               ?>
-
-<!-- Shopping cart -->
-
-              <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-                $count = WC()->cart->cart_contents_count;
-                ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
-                if ( $count > 0 ) {
-                    ?>
-                    <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-                    <?php
-                }
-                    ?></a>
-
-            <?php } ?>
-
-          </nav>
-
-
-
-
+              <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+              <?php
+            }
+            ?></a>
+          <?php } ?>
 
         </div>
 
-      </div>   <!-- end of row -->
+      </div>   <!-- End of row -->
 
     </nav>
 

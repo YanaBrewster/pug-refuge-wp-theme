@@ -9939,6 +9939,7 @@ h5 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+  color: #333333;
 }
 
 ul, li, a {
@@ -9977,6 +9978,18 @@ ul, li, a {
   color: white !important;
 }
 
+.social-media-icons {
+  font-size: 1.5em;
+  display: inline-flex;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+}
+
+.menu-item {
+  display: inline-flex;
+  padding-right: 15px;
+}
+
 .headerImage {
   width: 100vw;
   height: 70vh;
@@ -10012,6 +10025,10 @@ ul, li, a {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   vertical-align: top;
+}
+
+.logo {
+  font-size: 1.75em;
 }
 
 /*# sourceMappingURL=main.css.map */
