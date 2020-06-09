@@ -21,7 +21,7 @@
           the_excerpt();
           ?>
           <div class="text-center">
-            <a href="<?php the_permalink(); ?>" class=""> Read More </a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-dark rounded"> Read More </a>
           </div>
 
         </div>

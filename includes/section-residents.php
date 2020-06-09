@@ -1,5 +1,5 @@
-<div class="container">
-  
+<div class="container my-4 mx-4">
+
   <?php
   if (have_posts()) :
     while (have_posts()):
@@ -16,9 +16,9 @@
           </a>
 
           <!-- Get the date -->
-          <p>
+          <h5>
             <?php  echo get_the_date('h:i:s d/m/Y');?>
-          </p>
+          </h5>
 
           <p>
             <?php
@@ -32,7 +32,7 @@
           if($tags):
             foreach($tags as $tag):?>
 
-            <a class="" href="<?php echo get_tag_link($tag -> term_id);  ?>">
+            <a class="text-light" href="<?php echo get_tag_link($tag -> term_id);  ?>">
               <?php echo $tag -> name; ?>
             </a>
 

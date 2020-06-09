@@ -7,32 +7,59 @@
 
 h1{
 	font-family: 'Londrina Solid', cursive;
+	font-size: 2em;
+	@media (max-width: 991.98px) {
+		font-size: 1.75em;
+	}
 }
 
 h2{
-		font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
+	font-size: 1.75em;
+	@media (max-width: 991.98px) {
+		font-size: 1.75em;
+	}
 }
 
 h3{
-		font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
+	font-size: 1.50em;
+	@media (max-width: 991.98px) {
+		font-size: 1.50em;
+	}
 }
 
 h4{
-		font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
+	font-size: 1.750em;
+	@media (max-width: 991.98px) {
+		font-size: 1.250em;
+	}
 }
 
 h5{
-		font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
+	font-size: 1.625em;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
 }
 
 p{
 	font-family: 'Montserrat', sans-serif;
 	color: $grey;
+	font-size: 1.05em;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
 }
 
 ul, li, a {
-		color: $grey;
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 500;
-		font-size: 1.05em;
+	color: $grey;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1.05em;
+	@media (max-width: 991.98px) {
+		font-size: 1em;
+	}
 }

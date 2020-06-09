@@ -9919,27 +9919,63 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1 {
   font-family: 'Londrina Solid', cursive;
+  font-size: 2em;
+}
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 1.75em;
+  }
 }
 
 h2 {
   font-family: 'Lora', serif;
+  font-size: 1.75em;
+}
+@media (max-width: 991.98px) {
+  h2 {
+    font-size: 1.75em;
+  }
 }
 
 h3 {
   font-family: 'Lora', serif;
+  font-size: 1.50em;
+}
+@media (max-width: 991.98px) {
+  h3 {
+    font-size: 1.50em;
+  }
 }
 
 h4 {
   font-family: 'Lora', serif;
+  font-size: 1.750em;
+}
+@media (max-width: 991.98px) {
+  h4 {
+    font-size: 1.250em;
+  }
 }
 
 h5 {
   font-family: 'Lora', serif;
+  font-size: 1.625em;
+}
+@media (max-width: 991.98px) {
+  h5 {
+    font-size: 1em;
+  }
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   color: #333333;
+  font-size: 1.05em;
+}
+@media (max-width: 991.98px) {
+  p {
+    font-size: 1em;
+  }
 }
 
 ul, li, a {
@@ -9947,6 +9983,11 @@ ul, li, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 1.05em;
+}
+@media (max-width: 991.98px) {
+  ul, li, a {
+    font-size: 1em;
+  }
 }
 
 .center-l {
@@ -9990,6 +10031,34 @@ ul, li, a {
   padding-right: 15px;
 }
 
+#archives-dropdown-3 {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+#cat {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+#s {
+  width: 100%;
+}
+
+#searchsubmit {
+  color: white;
+  background: #333333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.250em;
+  font-family: 'Lora', serif;
+  margin-top: 8px;
+  padding: 5px;
+  width: 100%;
+}
+
 .headerImage {
   width: 100vw;
   height: 70vh;
@@ -9998,6 +10067,12 @@ ul, li, a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 991.98px) {
+  .headerImage {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 .cart-contents:before {
@@ -10029,6 +10104,11 @@ ul, li, a {
 
 .logo {
   font-size: 1.75em;
+}
+@media (max-width: 991.98px) {
+  .logo {
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

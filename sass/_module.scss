@@ -26,6 +26,8 @@
   color: white !important;
 }
 
+// ============================================================================
+
 // Social Media icons
 
 .social-media-icons{
@@ -40,4 +42,34 @@
 .menu-item{
 display: inline-flex;
 padding-right: 15px;
+}
+
+// Search bar
+
+#archives-dropdown-3{
+  font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+#cat{
+  font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+#s{
+  width: 100%;
+}
+
+#searchsubmit{
+  color: white;
+  background: $grey;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.250em;
+	font-family: 'Lora', serif;
+  margin-top: 8px;
+  padding: 5px;
+  width: 100%;
 }

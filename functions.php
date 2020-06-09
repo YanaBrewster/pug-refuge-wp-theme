@@ -83,7 +83,7 @@ function my_register_sidebars() {
             'description'   => __( 'Main sidebar.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="myHeadings widget-title px-3 py-3">',
+            'before_title'  => '<h3 class="myHeadings widget-title py-2">',
             'after_title'   => '</h3>',
         )
     );
@@ -94,7 +94,7 @@ function my_register_sidebars() {
             'description'   => __( 'Blog sidebar for main archive.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="myHeadings widget-title px-3 py-3">',
+            'before_title'  => '<h3 class="myHeadings widget-title py-2">',
             'after_title'   => '</h3>',
         )
     );
@@ -255,7 +255,33 @@ echo "</ul>";
 
 // =============================================================================
 
+// First we create a function
+function list_terms_custom_taxonomy( $atts ) {
 
+// Inside the function we extract custom taxonomy parameter of our shortcode
+
+    extract( shortcode_atts( array(
+        'custom_taxonomy' => '',
+    ), $atts ) );
+
+// arguments for function wp_list_categories
+$args = array(
+taxonomy => $custom_taxonomy,
+title_li => ''
+);
+
+// We wrap it in unordered list
+echo '<ul>';
+echo wp_list_categories($args);
+echo '</ul>';
+}
+
+// Add a shortcode that executes our function
+add_shortcode( 'ct_terms', 'list_terms_custom_taxonomy' );
+
+//Allow Text widgets to execute shortcodes
+
+add_filter('widget_text', 'do_shortcode');
 
 //Customize API
 require_once get_template_directory() . '/customizer.php';

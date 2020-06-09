@@ -25,7 +25,7 @@
   </div>
 
   <div class="col-12">
-    <p class="text-center"><b><?php echo get_theme_mod('charityShopTheme_footerMessage'); ?> | Created by Yana Brewster | <a href="https://www.yanabrewster.com/">www.yanabrewster.com</b></p>
+    <p class="text-center"><?php echo get_theme_mod('charityShopTheme_footerMessage'); ?> | Created by Yana Brewster | <a href="https://www.yanabrewster.com/">www.yanabrewster.com</a></p>
   </div>
 
 </div>
