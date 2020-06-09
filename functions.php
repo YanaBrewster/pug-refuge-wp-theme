@@ -3,8 +3,6 @@
 //Load Stylesheets
 function load_css(){
 
-  // wp_enqueue_style('bootstrap');
-
   wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
   wp_enqueue_style('main');
 
@@ -13,6 +11,7 @@ add_action('wp_enqueue_scripts','load_css');
 
 
 //Load Javascript
+
 function load_js()
 {
 
@@ -30,6 +29,7 @@ add_action('wp_enqueue_scripts', 'load_js');
 // =============================================================================
 
 // Theme Options
+
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
@@ -48,6 +48,7 @@ if ( ! isset ( $content_width) )
 // =============================================================================
 
 // Menus
+
 register_nav_menus(
   array(
     'top-menu' => 'Top Menu Location',
@@ -66,6 +67,7 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 // =============================================================================
 
 //Custom Image Size
+
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-medium', 600, 300, false);
 add_image_size('blog-small', 300, 200, true);
@@ -73,6 +75,7 @@ add_image_size('blog-small', 300, 200, true);
 // =============================================================================
 
 // Register Sidebars
+
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
 
@@ -103,6 +106,7 @@ function my_register_sidebars() {
 // =============================================================================
 
 // Custom Post Type
+
 function my_first_post_type(){
   $args = array(
     'labels' => array(
@@ -123,6 +127,7 @@ add_action('init','my_first_post_type');
 // =============================================================================
 
 // Taxanomy
+
 function my_first_taxonomy(){
   $args = array(
     'labels' => array(
@@ -161,6 +166,7 @@ add_theme_support('custom-header', $customHeaderDefaults);
 // =============================================================================
 
 // Woocommerce Cart
+
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 function enqueue_load_fa() {
 wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css' );
@@ -186,7 +192,7 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment
 
 // =============================================================================
 
-// Social Media Links in footer
+// Social Media Links in Footer
 
 function my_customizer_social_media_array() {
 
@@ -255,33 +261,22 @@ echo "</ul>";
 
 // =============================================================================
 
-// First we create a function
-function list_terms_custom_taxonomy( $atts ) {
+// Tag Cloud
+// MAKE THE TAGS THE SAME FONT SIZE AND IN A LIST
 
-// Inside the function we extract custom taxonomy parameter of our shortcode
+add_filter( 'widget_tag_cloud_args', 'change_tag_cloud_font_sizes');
 
-    extract( shortcode_atts( array(
-        'custom_taxonomy' => '',
-    ), $atts ) );
+function change_tag_cloud_font_sizes( array $args ) {
+    $args['smallest'] = '16';
+    $args['largest'] = '16';
+    $args['format'] = 'list';
 
-// arguments for function wp_list_categories
-$args = array(
-taxonomy => $custom_taxonomy,
-title_li => ''
-);
-
-// We wrap it in unordered list
-echo '<ul>';
-echo wp_list_categories($args);
-echo '</ul>';
+    return $args;
 }
 
-// Add a shortcode that executes our function
-add_shortcode( 'ct_terms', 'list_terms_custom_taxonomy' );
+// =============================================================================
 
-//Allow Text widgets to execute shortcodes
 
-add_filter('widget_text', 'do_shortcode');
-
-//Customize API
+// =============================================================================
+// HOOK Customize API
 require_once get_template_directory() . '/customizer.php';

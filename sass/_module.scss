@@ -30,6 +30,8 @@
 
 // Social Media icons
 
+// CHANGE THE SIZE OF FONT AWESOME ICONS
+
 .social-media-icons{
   font-size: 1.5em;
   display: inline-flex;
@@ -37,14 +39,18 @@
   letter-spacing: 0.5em;
 }
 
-// Footer nav
+// Footer Nav
+
+//  MAKE FOOTER LINKS INLINE AND HORIZONTAL
 
 .menu-item{
 display: inline-flex;
 padding-right: 15px;
 }
 
-// Search bar
+// Search Bar
+
+ // Sidebar - CHANGE THE WIDTH AND STYLE OF THE ARCHIVES DROPDOWN SELECT
 
 #archives-dropdown-3{
   font-size: 1em;
@@ -52,15 +58,21 @@ padding-right: 15px;
   width: 100%;
 }
 
+//  Sidebar - CHANGE THE WIDTH AND STYLE OF THE CATEGORIES DROPDOWN SELECT
+
 #cat{
   font-size: 1em;
 	font-family: 'Montserrat', sans-serif;
   width: 100%;
 }
 
+//  Sidebar - CHANGE THE WIDTH OF THE SEARCH INPUT FIELD
+
 #s{
   width: 100%;
 }
+
+// Sidebar - CHANGE THE SEARCH BUTTONS STYLE
 
 #searchsubmit{
   color: white;
@@ -72,4 +84,10 @@ padding-right: 15px;
   margin-top: 8px;
   padding: 5px;
   width: 100%;
+}
+
+// Sidebar -  MAKE THE CUSTOM SIDEBAR HAVE NO BULLETS
+
+.wp-tag-cloud ul, li{
+  list-style-type: none;
 }

@@ -18,15 +18,17 @@
       <?php if(has_post_thumbnail()): ?>
 
         <div>
-          <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="center-l img-fluid img-thumbnail">
+          <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="center-l img-fluid img-thumbnail mb-3">
         </div>
 
       <?php endif; ?>
 
-      <h1 class="myHeadings"> <?php the_title(); ?> </h1>
+      <h2 class="myHeadings mb-3"> <?php the_title(); ?> </h2>
       <?php get_template_part('includes/section','blogcontent'); ?>
       <?php wp_link_pages(); ?>
     </div>
+
+          <?php comments_template();?>
 
   </div>
 

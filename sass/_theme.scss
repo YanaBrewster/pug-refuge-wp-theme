@@ -1,3 +1,15 @@
+// Theme Logo
+
+.logo{
+  font-size: 1.75em;
+  @media (max-width: 991.98px) {
+    font-size: 1.5em;
+  }
+}
+
+
+// Header Image
+
 .headerImage{
     width: 100vw;
     height: 70vh;
@@ -12,7 +24,8 @@
     }
 }
 
-// Shopping cart icon
+// Shopping Cart Icon
+//  ADD A CART THAT AUTO-UPDATES TO THE NAV AND CHANGE THE STYLE
 
 .cart-contents:before {
     font-family:WooCommerce;
@@ -37,11 +50,4 @@
     line-height: 1;
     font-family:'Montserrat', sans-serif;
     vertical-align: top;
-}
-
-.logo{
-  font-size: 1.75em;
-  @media (max-width: 991.98px) {
-    font-size: 1.5em;
-  }
 }

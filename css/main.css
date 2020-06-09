@@ -10059,6 +10059,19 @@ ul, li, a {
   width: 100%;
 }
 
+.wp-tag-cloud ul, li {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 1.75em;
+}
+@media (max-width: 991.98px) {
+  .logo {
+    font-size: 1.5em;
+  }
+}
+
 .headerImage {
   width: 100vw;
   height: 70vh;
@@ -10100,15 +10113,6 @@ ul, li, a {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   vertical-align: top;
-}
-
-.logo {
-  font-size: 1.75em;
-}
-@media (max-width: 991.98px) {
-  .logo {
-    font-size: 1.5em;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
