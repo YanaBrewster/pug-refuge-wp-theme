@@ -81,9 +81,9 @@ function my_register_sidebars() {
 
     register_sidebar(
         array(
-            'id'            => 'primary',
-            'name'          => __( 'Page Sidebar' ),
-            'description'   => __( 'Main sidebar.' ),
+            'id'            => 'page-sidebar',
+            'name'          => __( 'page-sidebar' ),
+            'description'   => __( 'Main sidebar for Success Stories.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="myHeadings widget-title py-2">',
@@ -92,8 +92,8 @@ function my_register_sidebars() {
     );
     register_sidebar(
         array(
-            'id'            => 'secondary',
-            'name'          => __( 'Blog Sidebar' ),
+            'id'            => 'blog-sidebar',
+            'name'          => __( 'blog-sidebar' ),
             'description'   => __( 'Blog sidebar for main archive.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',

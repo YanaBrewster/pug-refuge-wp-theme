@@ -42,9 +42,6 @@ if (have_posts()) :
     ?>
   </b></p>
 
-  <?php
-  $categories = get_the_category();
-  ?>
   <p><b> Categories:
 <?php the_category(', ') ?>
 </b></p>
