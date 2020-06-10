@@ -1,4 +1,4 @@
-<div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<section class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
   <?php
   if (have_posts()) :
@@ -31,4 +31,4 @@
     endif;
     ?>
 
-</div>
+</section>

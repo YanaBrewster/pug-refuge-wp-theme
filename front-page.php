@@ -8,8 +8,8 @@
     </div>
 <?php endif; ?>
 
-<div class="container">
-      <h2 class="myHeadings"> <?php the_title(); ?></h2>
+<div class="container mx-auto">
+      <h2 class="myHeadings text-center my-5"> <?php the_title(); ?></h2>
       <?php get_template_part('includes/section','content'); ?>
 </div>
 
