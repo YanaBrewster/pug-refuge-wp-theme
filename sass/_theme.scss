@@ -1,3 +1,4 @@
+
 // Theme Logo
 
 .logo{
@@ -50,4 +51,13 @@
     line-height: 1;
     font-family:'Montserrat', sans-serif;
     vertical-align: top;
+}
+
+// Text Container
+
+.text-box{
+  width: 60%;
+  @media (max-width: 991.98px) {
+    width: 90%;
+  }
 }

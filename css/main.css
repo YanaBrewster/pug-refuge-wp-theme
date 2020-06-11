@@ -9930,6 +9930,8 @@ h1 {
 h2 {
   font-family: 'Lora', serif;
   font-size: 1.75em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   h2 {
@@ -9940,6 +9942,8 @@ h2 {
 h3 {
   font-family: 'Lora', serif;
   font-size: 1.50em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   h3 {
@@ -9950,6 +9954,8 @@ h3 {
 h4 {
   font-family: 'Lora', serif;
   font-size: 1.750em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   h4 {
@@ -10206,6 +10212,15 @@ ul, li, a {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   vertical-align: top;
+}
+
+.text-box {
+  width: 60%;
+}
+@media (max-width: 991.98px) {
+  .text-box {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
