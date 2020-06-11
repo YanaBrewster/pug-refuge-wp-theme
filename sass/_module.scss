@@ -74,7 +74,7 @@
 
 //  MAKE PRODUCTS ONE 100% WIDE ON MOBILE VIEW
 
-}
+
 .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product{
 @media (max-width: 991.98px) {
 float: none !important;
@@ -99,6 +99,10 @@ margin-right: auto !important;
 	@media (max-width: 991.98px) {
 		font-size: 1em !important;
 	}
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+display: inline-block !important;
 }
 
 // ============================================================================

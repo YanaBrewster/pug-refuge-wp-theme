@@ -10102,6 +10102,10 @@ ul, li, a {
   }
 }
 
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  display: inline-block !important;
+}
+
 #wpforms-58-field_2 {
   width: 60% !important;
 }

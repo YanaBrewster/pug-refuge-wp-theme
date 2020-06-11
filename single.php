@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 ml-lg-4">
+    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9">
       <?php if(has_post_thumbnail()): ?>
 
         <div>
