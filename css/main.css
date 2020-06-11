@@ -10076,6 +10076,15 @@ ul, li, a {
   margin-right: auto;
 }
 
+@media (max-width: 991.98px) {
+  .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    float: none !important;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 .woocommerce-input-wrapper {
   width: 80% !important;
 }

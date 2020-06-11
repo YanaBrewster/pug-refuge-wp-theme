@@ -72,6 +72,18 @@
   margin-right: auto;
 }
 
+//  MAKE PRODUCTS ONE 100% WIDE ON MOBILE VIEW
+
+}
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product{
+@media (max-width: 991.98px) {
+float: none !important;
+width: 90% !important;
+margin-left: auto !important;
+margin-right: auto !important;
+  }
+}
+
 // Checkout page
 
 .woocommerce-input-wrapper{
