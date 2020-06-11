@@ -6,4 +6,4 @@ if (have_posts()) :
   endwhile;
 else:
 endif;
- ?>
+?>

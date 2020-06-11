@@ -43,12 +43,12 @@ if (have_posts()) :
   </b></p>
 
   <p><b> Categories:
-<?php the_category(', ') ?>
-</b></p>
+    <?php the_category(', ') ?>
+  </b></p>
 
-<?php comments_template();?>
+  <?php comments_template();?>
 
-<?php
+  <?php
 
 endwhile;
 else:

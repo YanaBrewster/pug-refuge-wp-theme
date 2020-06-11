@@ -10171,6 +10171,10 @@ ul, li, a {
   width: 100%;
 }
 
+.search-nopage {
+  width: 60% !important;
+}
+
 .wp-tag-cloud ul, li {
   list-style-type: none;
 }
@@ -10228,7 +10232,7 @@ ul, li, a {
 }
 
 .text-box {
-  width: 60%;
+  width: 50%;
 }
 @media (max-width: 991.98px) {
   .text-box {
