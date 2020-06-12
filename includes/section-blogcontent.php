@@ -20,37 +20,13 @@ if (have_posts()) :
 
     <p class="font-italic"> <?php echo 'Posted by ' . $fname . ' ' . $lname; ?> </p>
 
+    <?php the_tags( '<p><b>Tags:</b> ', ', ', '<br /></p>'); ?>
+
+    <p><b> Categories: <?php the_category(', ') ?></b></p>
 
     <?php
-    $tags = get_the_tags();
 
-    ?>
-    <p><b> Tags:
-      <?php
-      echo ' ';
-
-      if($tags):
-        foreach($tags as $tag):?>
-
-        <a href="<?php echo get_tag_link($tag -> term_id);  ?>">
-          <?php echo  $tag -> name; ?>
-        </a>
-
-      <?php endforeach;
-    else:
-    endif;
-    ?>
-  </b></p>
-
-  <p><b> Categories:
-    <?php the_category(', ') ?>
-  </b></p>
-
-  <?php comments_template();?>
-
-  <?php
-
-endwhile;
+  endwhile;
 else:
 endif;
 

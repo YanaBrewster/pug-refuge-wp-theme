@@ -61,3 +61,26 @@
     width: 90%;
   }
 }
+
+// Show/hide button
+
+.ub-expand-toggle-button{
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: $grey!important;
+  color: white !important;
+  border-radius: 5px;
+  padding: 5px;
+  width: 20%;
+  @media (max-width: 991.98px) {
+    width: 50%;
+  }
+}
+
+//CTA Buttons
+
+.ub-button-block-btn{
+  border-radius: 10px !important;
+}

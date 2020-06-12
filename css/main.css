@@ -9977,6 +9977,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   color: #333333;
   font-size: 1.05em;
+  line-height: 31px;
 }
 @media (max-width: 991.98px) {
   p {
@@ -10238,6 +10239,27 @@ ul, li, a {
   .text-box {
     width: 90%;
   }
+}
+
+.ub-expand-toggle-button {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: #333333 !important;
+  color: white !important;
+  border-radius: 5px;
+  padding: 5px;
+  width: 20%;
+}
+@media (max-width: 991.98px) {
+  .ub-expand-toggle-button {
+    width: 50%;
+  }
+}
+
+.ub-button-block-btn {
+  border-radius: 10px !important;
 }
 
 /*# sourceMappingURL=main.css.map */
