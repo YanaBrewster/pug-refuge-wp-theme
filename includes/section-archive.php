@@ -10,7 +10,7 @@
 
           <?php if(has_post_thumbnail()): ?>
             <div>
-              <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="center img-fluid img-thumbnail">
+              <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="center-l img-fluid img-thumbnail">
             </div>
           <?php endif; ?>
 

@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Lora:wght@700&family=Montserrat:wght@500&display=swap");
-@import url("//use.fontawesome.com/releases/v5.13.0/css/all.css'");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9917,21 +9916,33 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
 h1 {
   font-family: 'Londrina Solid', cursive;
   font-size: 2em;
 }
 @media (max-width: 991.98px) {
   h1 {
-    font-size: 1.75em;
+    font-size: 1.50em;
   }
 }
 
 h2 {
   font-family: 'Lora', serif;
   font-size: 1.75em;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   h2 {
@@ -9942,8 +9953,6 @@ h2 {
 h3 {
   font-family: 'Lora', serif;
   font-size: 1.50em;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   h3 {
@@ -9953,13 +9962,11 @@ h3 {
 
 h4 {
   font-family: 'Lora', serif;
-  font-size: 1.750em;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 1.250em;
 }
 @media (max-width: 991.98px) {
   h4 {
-    font-size: 1.250em;
+    font-size: 1.05em;
   }
 }
 
@@ -10086,6 +10093,18 @@ ul, li, a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.75em !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .woocommerce ul.products li.product .price {
+    font-size: 1.50em !important;
+  }
+}
+
 .woocommerce-input-wrapper {
   width: 80% !important;
 }
@@ -10201,7 +10220,7 @@ ul, li, a {
 @media (max-width: 991.98px) {
   .headerImage {
     width: 100%;
-    height: 50vh;
+    height: 25vh;
   }
 }
 
@@ -10260,6 +10279,13 @@ ul, li, a {
 
 .ub-button-block-btn {
   border-radius: 10px !important;
+}
+
+@media (max-width: 991.98px) {
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -86,8 +86,8 @@ function my_register_sidebars() {
       'description'   => __( 'Main sidebar for Success Stories.' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="myHeadings widget-title py-2">',
-      'after_title'   => '</h3>',
+      'before_title'  => '<h4 class="myHeadings widget-title py-2">',
+      'after_title'   => '</h4>',
     )
   );
   register_sidebar(
@@ -97,8 +97,8 @@ function my_register_sidebars() {
       'description'   => __( 'Blog sidebar for main archive.' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="myHeadings widget-title py-2">',
-      'after_title'   => '</h3>',
+      'before_title'  => '<h4 class="myHeadings widget-title py-2">',
+      'after_title'   => '</h4>',
     )
   );
 }
@@ -267,14 +267,20 @@ function my_social_media_icons() {
 add_filter( 'widget_tag_cloud_args', 'change_tag_cloud_font_sizes');
 
 function change_tag_cloud_font_sizes( array $args ) {
-  $args['smallest'] = '16';
-  $args['largest'] = '16';
+  $args['smallest'] = '14';
+  $args['largest'] = '14';
   $args['format'] = 'list';
 
   return $args;
 }
 
 // =============================================================================
+
+//remove display tagline/title option
+function de_register( $wp_customize ) {
+    $wp_customize->remove_control('display_header_text');
+}
+add_action( 'customize_register', 'de_register', 11 );
 
 
 // =============================================================================

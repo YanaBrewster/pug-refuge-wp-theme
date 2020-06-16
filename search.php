@@ -5,9 +5,15 @@
   <div class="row">
 
     <div class="col-8 col-xs-8 col-sm-8 col-md-8 col-lg-3 mb-4">
-      <div  id="sidebar-secondary" class="sidebar card px-3 py-3">
-        <?php if ( is_active_sidebar( 'secondary' ) ) : ?>
-          <?php dynamic_sidebar( 'secondary' ); ?>
+      <div id="blog-sidebar" class="widget card px-3 py-3">
+        <?php if ( is_active_sidebar( 'blog-sidebar' ) ) : ?>
+          <?php dynamic_sidebar( 'blog-sidebar' ); ?>
+        <?php else : ?>
+        <?php endif; ?>
+      </div>
+      <div id="page-sidebar" class="widget card px-3 py-3">
+        <?php if ( is_active_sidebar( 'page-sidebar' ) ) : ?>
+          <?php dynamic_sidebar( 'page-sidebar' ); ?>
         <?php else : ?>
         <?php endif; ?>
       </div>
