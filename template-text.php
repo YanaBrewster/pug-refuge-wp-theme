@@ -6,7 +6,7 @@
 
   <h2 class="myHeadings text-center my-5"> <?php the_title(); ?></h2>
 
-  <div class="text-box mx-auto">
+  <div class="text-box-l mx-auto">
     <?php get_template_part('includes/section','content'); ?>
   </div>
 

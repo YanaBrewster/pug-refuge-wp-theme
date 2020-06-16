@@ -213,3 +213,11 @@ padding-right: 15px;
 .wp-tag-cloud ul, li{
   list-style-type: none;
 }
+
+// Mobile Nav - CHANGE DROPMENU POSITION
+
+.navbar-nav .dropdown-menu {
+  @media (max-width: 991.98px) {
+    position: absolute !important;
+  }
+}

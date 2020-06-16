@@ -10010,6 +10010,15 @@ ul, li, a {
   margin-right: auto;
 }
 
+.text-box-l {
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  .text-box-l {
+    width: 90%;
+  }
+}
+
 /* WooCommerce */
 /* Checkout page layout fix */
 .woocommerce-checkout .col-1, .woocommerce-checkout .col-2 {
@@ -10199,6 +10208,12 @@ ul, li, a {
   list-style-type: none;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+}
+
 .logo {
   font-size: 1.75em;
 }
@@ -10249,15 +10264,6 @@ ul, li, a {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   vertical-align: top;
-}
-
-.text-box {
-  width: 50%;
-}
-@media (max-width: 991.98px) {
-  .text-box {
-    width: 90%;
-  }
 }
 
 .ub-expand-toggle-button {
