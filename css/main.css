@@ -10025,6 +10025,14 @@ ul, li, a {
   max-width: inherit;
 }
 
+.woocommerce-checkout .col-1, .woocommerce-checkout .col-2 {
+  max-width: inherit;
+}
+
+.woocommerce .col2-set .col-1 {
+  max-width: none !important;
+}
+
 /* Shop price colour  */
 .woocommerce ul.products li.product .price {
   color: #333333 !important;
