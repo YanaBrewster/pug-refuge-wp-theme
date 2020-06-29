@@ -286,3 +286,11 @@ add_action( 'customize_register', 'de_register', 11 );
 // =============================================================================
 // HOOK Customize API
 require_once get_template_directory() . '/customizer.php';
+
+// =============================================================================
+
+    require get_parent_theme_file_path('./educational_alert.php');
+
+    $realSite = 'Pug Rescue';
+    $realSiteURL = 'https://www.facebook.com/NewZealandPugRescue/';
+    $designerName = 'Yana Brewster';

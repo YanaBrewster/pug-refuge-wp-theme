@@ -5,6 +5,12 @@
 	padding: 0;
 }
 
+// Remove excess padding on the right side of the webpage
+html, body{
+	width: 100%;
+	overflow-x: hidden !important;
+}
+
 // Keep footer at bottom of page
 
 html{
